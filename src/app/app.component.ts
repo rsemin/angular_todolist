@@ -1,3 +1,4 @@
+import { TodoItem } from './models/todo.model';
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todo-list-app';
+  title: string = ' Angular todo-list-app';
+  sTodoItems = [];
+
+  TodoAdd(todoItem){
+    this.sTodoItems.push(todoItem);
+  }
 }

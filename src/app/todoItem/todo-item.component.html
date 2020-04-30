@@ -1,0 +1,8 @@
+<h3>Todo Item List</h3>
+<ul>
+    <li *ngFor="let todoItem of todoItems">
+        <h3>{{todoItem.category}}</h3>
+        <p>{{todoItem.content}}</p>
+        <button>Delete</button>
+    </li>
+</ul>
